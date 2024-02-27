@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Your Custom Font', sans-serif;
+          
+        }
+    
+        footer {
+          display: flex;
+        }
+    
+        .first-division {
+          width: 30%;
+          background-color: #f1f1f1;
+          padding: 20px;
+          box-sizing: border-box;
+          font-family:sans-serif;
+          color: #888; /* Light gray color */
+          display: flex;
+        }
+        .social-media-links {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 20px;
+        }
+    
+        .social-media-links a {
+          text-decoration: none;
+          color: #333;
+        }
+    
+        .social-media-links img {
+          width: 30px;
+          height: 30px;
+        }
+    
+        .vertical-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+    
+        .vertical-list li {
+          margin-bottom: 10px;
+        }
+    
+        .second-division {
+          width: 70%;
+          background-color: #ddd;
+          padding: 20px;
+          box-sizing: border-box;
+          margin-top: 20px; /* Add some space at the top */
+      }
+        .list-unstyled li a {
+          text-decoration: none; /* Remove underline */
+          color: inherit; /* Inherit text color from parent */
+          font-size: 12px;
+
+      }
+     
+    
+    /* Adjust the line-height if needed */
+    ul.list-unstyled.mb-0 li {
+      
+        line-height: 2.5; 
+        color: transparent;/* Adjust the value as needed for spacing */
+    }
+    /* Default styles for larger screens */
+    .social-media-links a img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px; /* Add some spacing between social media icons */
+  }
+
+.first-division{
+    display: flex;
+    
+    flex-direction: column;
+}
+.second-division{
+    display: flex;
+    flex-direction: column;
+}
+ 
+
+  @media screen and (max-width: 750px) {
+    .social-media-links a img {
+      width: 20px; /* Adjust the width according to your design */
+      height: auto;
+      padding: 1px;
+
+    }
+    
+    .second-division p {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #555;
+  }
+    .second-division{
+        flex-direction: column;
+    }
+    .first-division{
+        
+        flex-direction: column;
+    }
+    .vertical-list li {
+        margin-bottom: 10px;
+        font-size: 5px; /* Adjust the font size for smaller screens */
+    }
+}
+.text-uppercase{
+  font-weight: bold;
+}
+@media screen and (max-width: 750px) {
+  .text-uppercase {
+    font-size: 10px; /* Adjust the font size for smaller screens */
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 15px; /* Use font-weight instead of font-style */
+}
+
+
+    .list-unstyled.mb-0 li {
+        font-size: 10px; /* Adjust the font size for smaller screens */
+        text-align: left;
+    }
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10%; /* Adjust the left padding */
+  padding-right: 9%; /* Adjust the right padding */
+}
+@media screen and (max-width: 750px) {
+    .flex-container {
+        flex-direction:column;
+        padding-left:0%;
+    padding-right: 0%;
+    }
+    
+    .flo{
+        height: 60px;
+        width: 110px;
+        margin-bottom: -40px;
+    }
+    
+    .second-division p{
+        text-align: left;
+        width: 100%;
+          
+    }
+    
+
+}
+.nav-item{
+  font-size: 14.5px;
+}
+@media (max-width: 750px) {
+    /* Styles for screens with a maximum width of 440px or less */
+  
+    /* Adjust the styling for the button with dots.png */
+    .navbar-nav li.nav-item:last-child button {
+      padding: 5px; /* Add padding to the button */
+    }
+    
+    .navbar-nav li.nav-item:last-child img {
+      height: 20px; /* Adjust the height of the image */
+      width: 20px; /* Adjust the width of the image */
+    }
+  }
+  @media (max-width: 750px) {
+    .col-lg-3 {
+      flex: 0 0 100%; /* Make the columns take full width */
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .vertical-list li {
+      margin-bottom: 2px;
+      display: inline-block;
+      font-size: 12px; /* Set the font size to 10px */
+      margin: 0;
+      width: 100%;
+      
+    }
+    .vertical-list li:nth-child(2) {
+      margin-bottom: 15px; /* Add space after the second li for screens <= 700px */
+    }
+    .first-division {
+      width: 60%;
+      display: flex;
+    }
+    .second-division {
+      width: 100%;
+      display: flex;
+    }
+    .container p-4{
+      display: flex;
+      flex-direction: row;
+    }
+  
+
+  }
+  @media (max-width: 750px) {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* or any other preferred alignment */
+    }
+    
+  }
+  @media (max-width: 750px) {
+    .row.justify-content-center .col-lg-2 {
+      flex: 0 0 100%; /* Make the columns take full width */
+      max-width: 100%;
+      margin-bottom: 1rem; /* Add margin-bottom of 1 */
+    }
+  
+    .row.justify-content-center .col-md-6 {
+      flex: 0 0 50%; /* Make the columns take 50% width */
+      max-width: 50%;
+    }
+    .menu-icon{
+      display: none;
+    }
+    
+    .menu-icon{
+      padding-left: 50px;
+    }
+    
+  }
+  .new {
+    font-size: 10px;  
+    background-color: #0178fe; 
+    color: white; 
+    border-width: 15px;  /* Set the border style to solid */
+    border-radius: 3px;
+    text-align: center;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+}
+.text-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding-left: 10px; /* Add padding for better spacing */
+}
+.text-center1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  /* Add padding for better spacing */
+}
+
+
+.left-span {
+  display: flex;
+  align-items: center;
+  margin-left: 99px;
+}
+
+.right-span {
+  display: flex;
+  align-items: center;
+  margin-right: 99px;
+}
+@media (max-width: 750px) {
+  .text-center1 {
+    display: flex;
+    flex-direction: column; /* Set the direction to column */
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .left-span, .right-span {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    text-align: center; /* Center content vertically */
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .col-lg-2 {
+    flex: 0 0 100%; /* Single column for smaller screens */
+    max-width: 100%;
+    margin-bottom: 1rem; /* Optional: Add some space between the columns */
+  }
+  .lolo{
+    width: 80%;
+    height: 17px;
+  }
+  
+}
+nav {
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+}
+
+
+
+      </style>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <!-- Example Code -->
+    
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <!-- Replace the text with your logo or image -->
+            <img src="logo.png" class="lolo" style="height: 40px;" alt="Logo">
+          </a>
+          <button style="border-color: transparent;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" >
+            <img src="dice.svg" alt="" style="height: 30px; width:30px">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown" style="font-weight: 600; color: gray;">
+            <ul class="navbar-nav mx-auto"> <!-- Center-align the items -->
+              <li class="nav-item me-5"> <!-- Add even more spacing -->
+                <a class="nav-link" href="#">IPO</a>
+              </li>
+              <li class="nav-item me-5"> <!-- Add even more spacing -->
+                <a class="nav-link" href="#">COMMUNITY</a>
+              </li>
+              <li class="nav-item dropdown me-5"> <!-- Add even more spacing -->
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PRODUCTS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">ACTION</a></li>
+                  <li><a class="dropdown-item" href="#">ANOTHER ACTION</a></li>
+                  <li><a class="dropdown-item" href="#">SOMTHING ELSE HERE</a></li>
+                </ul>
+              </li>
+              <li class="nav-item me-5"> <!-- Add even more spacing -->
+                <a class="nav-link" href="#" >BROKERS<span>↗</span> </a>
+
+
+              </li>
+              <li class="nav-item me-5"> <!-- Add even more spacing -->
+                <a class="nav-link" href="#">LIVE NEWS<sup class="new">NEW</sup></a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <button type="button" style="border: none; background-color: transparent; font-weight: 600; font-size:14.5px; color: gray;">Sign in</button>
+
+              </li>
+              &nbsp&nbsp
+              <li class="nav-item" >
+                <button type="button" class="btn btn-primary btn-sm mr-3" style="font-weight: 600; font-size:14.5px;">Sign up Now</button>
+              </li>
+              &nbsp&nbsp
+              
+              <li class="nav-item">
+                <a class="navbar-brand" href="#">
+                  <!-- Replace the text with your logo or image -->
+                  <img src="dice.png" class="menu-icon" style="height: 25px; width: 21px; padding:1px; margin-bottom:2px;" alt="Button Image">
+                  
+                </a>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <footer class=" text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4" style="background-color: transparent; margin-right:1px;">
+            <!--Grid row-->
+            <div class="row justify-content-center" style="font-size: small;">
+
+              <div class="col-lg-2 col-md-6 mb-4">
+                  <h5 class="text-uppercase" style="font-size: 12px;">Resources</h5>
+          
+                  <ul class="list-unstyled mb-0">
+                      <li><a href="#!" class="text-body">Trading View</a></li>
+                      <li><a href="#!" class="text-body">NSE Holidays</a></li>
+                      <li><a href="#!" class="text-body">e-Voting CDSL</a></li>
+                      <li><a href="#!" class="text-body">e-Voting NSDL</a></li>
+                      <li><a href="#!" class="text-body">Market Timings</a></li>
+                  </ul>
+              </div>
+              
+          
+              <div class="col-lg-2 col-md-6 mb-4">
+                  <h5 class="text-uppercase mb-0" style="font-size: 12px;">Company</h5>
+          
+                  <ul class="list-unstyled mb-0">
+                      <li><a href="#!" class="text-body">Careers</a></li>
+                      <li><a href="#!" class="text-body">Contact Us</a></li>
+                      <li><a href="#!" class="text-body">About Us</a></li>
+                      <li><a href="#!" class="text-body">Community</a></li>
+                      <li><a href="#!" class="text-body">Blogs</a></li>
+                  </ul>
+              </div>
+              
+          
+              <div class="col-lg-2 col-md-6 mb-4">
+                  <h5 class="text-uppercase" style="font-size: 12px;">Offerings</h5>
+          
+                  <ul class="list-unstyled mb-0">
+                      <li><a href="#!" class="text-body">Compare Broker</a></li>
+                      <li><a href="#!" class="text-body">Fin Calculators</a></li>
+                      <li><a href="#!" class="text-body">IPO</a></li>
+                      <li><a href="#!" class="text-body">All Brokers</a></li>
+                      <li><a href="#!" class="text-body">Products</a></li>
+                  </ul>
+              </div>
+          
+              <div class="col-lg-2 col-md-6 mb-4">
+                  <h5 class="text-uppercase mb-0" style="font-size: 12px;">Links</h5>
+          
+                  <ul class="list-unstyled mb-0">
+                      <li><a href="#!" class="text-body">Shark Investor</a></li>
+                      <li><a href="#!" class="text-body">Mutual Funds</a></li>
+                      <li><a href="#!" class="text-body">Sitemap</a></li>
+                      <li><a href="#!" class="text-body">Indian Indices</a></li>
+                      <li><a href="#!" class="text-body">Bug Bounty Program</a></li>
+                  </ul>
+             <!-- </div><div class="col-lg-2 col-md-6 mb-4">
+                <h5 class="text-uppercase mb-0" style="font-size: 12px;">Policy</h5>
+        
+                <ul class="list-unstyled mb-0">
+                    <li><a href="#!" class="text-body">Terms & Conditions</a></li>
+                    <li><a href="#!" class="text-body">Privacy Policy</a></li>
+                    <li><a href="#!" class="text-body">Refund Policy</a></li>
+                    <li><a href="#!" class="text-body">Disclaimer</a></li>
+                    <li><a href="#!" class="text-body">Trust & Security</a></li>
+                </ul>
+            </div>-->
+          
+          </div>
+                   
+    
+        <!-- Copyright -->
+    </footer>
+    
+    <footer>
+        <div class="flex-container">
+    
+            <div class="first-division" style="background-color: transparent; ">
+                <div class="social-media-links" style="width: 70%;">
+                    <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="youtube.png" alt="YouTube"></a>
+                    <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="telegram.png" alt="telegram"></a>
+                </div>
+                <img class="logo" src="logo.png" alt="Footer Image" style="width: 70%;">
+                <ul class="vertical-list">
+                    <li>Bluestock Fintech</li>
+                    <li>Pune Maharashtra</li>
+                    <br>
+                    <li>MSME Registration No:</li>
+                    <li>UDYAM-MH-01-v0138001</li>
+                </ul>
+    
+                <img class="flo" src="Footer.png" alt="Footer Image" style="width: 80%;">
+            </div>
+    
+            <div class="second-division" style="background-color: transparent; font-size:15px;">
+                <p>In securities markets are subject to market risks, read all the related documents carefully before investing as prescribed by SEBI, Issued in the interest of the investors
+                </p>
+                <p>The clients can write to <span style="color:#0178fe; ">hello<span style="text-decoration: underline;">@bluestock.in</span></span>
+                  for any account opening related queries. Also, you can send IT/Tech-related feedback to <span style="color:#0178fe ;">cto<span style="text-decoration: underline;">@bluestock.in</span></span>
+                </p>
+                <br><br>
+                <p>Disclaimer: We are not a SEBI registered research analyst company. We do not provide any kind of stock recommendations, buy/sell stock tips, or investment and trading advice. All the stock scripts shown in the BlueStock app are for educational purposes only. <br>
+                    Before making any investment in the financial market, it is advisable to consult with your financial advisor. Remember that stock markets are subject to market risks.
+                </p>
+            </div>
+    
+        </div>
+    
+        <!-- Copyright and Made in Pune, Maharashtra -->
+    </footer>
+    
+    
+  
+    <hr style="width: 88%; margin: 0 auto;">
+
+  
+<div class="text-center1">
+  <div class="left-span">
+    <span>Bluestock Fintech. All rights reserved.</span>
+  </div>
+  <div class="right-span">
+    <span>Made in ❤️ Pune, Maharashtra</span>
+  </div>
+</div>
+</html>
